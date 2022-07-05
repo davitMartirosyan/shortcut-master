@@ -1,0 +1,46 @@
+.try{
+    background-color: var(--prm-bg-clr);
+    height:655px;
+    padding-top:146px!important;
+}
+.try-section > *{
+    margin-bottom:65px;
+}
+.editor-title{
+    text-align: center;
+    width:600px;
+}
+.editor-title .title{
+    font-size:42px;
+    margin-bottom: 22px;
+}
+.editor-title p{
+    padding:0 20px;
+    font-size: 18px;;
+}
+.terminal{
+    background-color:var(--prm-clr);
+    padding:25px 35px;
+    min-width:795px;
+}
+
+.console .user{
+    color:var(--wh-clr);
+    font-size:18px;
+}
+.user i + i{
+    margin-left:5px;
+}
+.commands{
+    height:40px;
+    flex:1;
+    padding-left:15px;
+}
+.command-line{
+    height:100%;
+    font-size: 18px;
+    width: 100%;
+    background-color: transparent;
+    border:0;
+    color:var(--wh-clr);
+}

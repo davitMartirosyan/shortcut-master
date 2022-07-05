@@ -1,0 +1,137 @@
+.hero{
+    /* background-color: red; */
+    padding:5px;
+}
+.section-container{
+    /* border:1px solid; */
+    padding: 0 140px;
+}
+.visualisation{
+    /* border:1px solid; */
+    gap:50px;
+}
+.visual-left > *{
+    margin-bottom:59px;
+}
+.visual-left{
+    color:var(--wh-clr);
+}
+.visual-left .annotation{
+    font-weight: bold;
+    font-size:75px;
+    position: relative;
+}
+.annotation i{
+    position: absolute;
+    right:4rem;
+    top:-.8rem;
+    font-size:25px;
+
+}
+.button-components{
+    height:191px;
+}
+.big{
+    transition: .2s;
+    cursor: pointer;
+    height:166px;
+    padding:25px;
+    border:0;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-right:20px;
+}
+.big:active{
+    box-shadow:0 0 0;
+    margin-top:25px;
+}
+.btn-yellow{
+    width:300px;
+    background-color: var(--prm-btn-clr);
+    box-shadow: 0 25px 0 var(--prm-btn-shdw-clr);
+}
+.btn-pink{
+    width:168px;
+    background-color: var(--btn-clr);
+    box-shadow: 0 25px 0 var(--btn-shdw-clr);
+}
+.big .key-icon{
+    display: inline-block;
+    width:46px;
+    height:46px;
+    background-repeat: no-repeat;
+}
+.key-icon.command{
+    background-image: url("../assets/icons/Icon\ feather-command.svg");
+    background-size: contain;
+}
+.key-icon.option{
+    background-image: url("../assets/icons/apple-keyboard-option.svg");
+    background-size: contain;
+}
+.big .key-word{
+    color:var(--wh-clr);
+    font-size: 29px;
+}
+.form .email{
+    outline: none;
+    border:0;
+    flex:1;
+    /* border:2px solid var(--btn-clr); */
+    border:0;
+    font-size:15px;
+    padding-left:25px;
+    margin-right:15px;
+    border-radius: 30px;
+}
+.form .send{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    padding:0;
+}
+
+.tools{
+    height:100%;
+    width:58px;
+    background-color: var(--prm-clr-comp);
+    box-shadow: 0 7px 0 var(--prm-clr-comp-shdw);
+    border-radius:18px;
+    overflow: hidden;
+    padding:90px 0;
+}
+.tool-bar{
+    width:100%;
+    height:100%;
+}
+.tool-bar .tool{
+    display:inline-block;
+    background-repeat: no-repeat;
+    width:25px;
+    height:25px;
+    transform: rotate(90deg);
+}
+.text-tool{
+    background-image: url("../assets/Icon\ open-text.svg");
+}
+.paint-tool{
+    background-image: url("../assets/Icon\ material-brush.svg");
+}
+.crop-tool{
+    background-image: url("../assets/Icon\ awesome-crop-alt.svg");
+}
+.pos-tool{
+    background-image: url("../assets/Icon\ feather-move.svg");
+}
+.pen-tool{
+    background-image: url("../assets/Icon\ feather-pen-tool.svg");
+}
+.eyedropper-tool{
+    background-image: url("../assets/Icon\ metro-eyedropper.svg");
+}
+.eyedropper-tool{
+    background-image: url("../assets/Icon\ metro-eyedropper.svg");
+}
+.cut-tool{
+    background-image: url("../assets/Icon\ ionic-ios-cut.svg");
+}
