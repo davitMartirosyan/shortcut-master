@@ -1,0 +1,52 @@
+<div class="adobe-packet">
+    <div class="packet">
+        <img src="assets/components/Group 16.svg" alt="">
+    </div>
+</div>
+
+<div class="terminal">
+    <div class="console f jc-sb ai-c">
+        <span class="user">
+            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-dollar-sign"></i>
+        </span>
+        <div class="commands">
+            <input type="text" name="command" class="command-line" autofocus>
+        </div>
+    </div>
+</div>
+
+<div class="key-row f">
+    <button class="key mid">Tab</button>
+    <button class="key low"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key"></button>
+    <button class="key mid"></button>
+</div>
+
+
+data.forEach(elem => {
+    let keyRow = document.createElement("div");
+    keyRow.classList = "key-row f";
+    for(let i = 0; i < elem.length; i++)
+    {
+            let clas = elem[i].key.width;
+            let symbol = elem[i].key.symbol;
+            let rand = Math.ceil(Math.random() * elem.length);
+            let key = document.createElement("button");
+            key.classList = `key ${clas}`;
+            key.textContent = symbol;
+            key.style.boxShadow = i == rand ? `0px 0px 15px 8px #FF11${rand*8}` : 0;
+            keyRow.appendChild(key)
+        }
+    keyboard.appendChild(keyRow);
+})

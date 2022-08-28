@@ -12,12 +12,20 @@
     --dw-clr:#00E67B;
     --ae-clr:#E27DE2;
     --ai-clr:#FF6C0A;
-    --lr-clr:#2FA3F7;
+    --lr-clr:#063457;
+    --pr-clr:#A23FB4;
     --ps-clr:#007DDB;
     --lg-clr:#B400FF;
     --key-back:#565656;
     --key-border:#464646;
     --key-shdw:#363636;
+    --keypad-border: #4b4b4b;
+    --keypad-clr:#262626;
+    --lock:#B8B8B8;
+    --note-back:#707070;
+    --icon-ps:#002F53;
+    --icon-pr:#811694;
+    --icon-lr: #001A2E;
 }
 input, button{
     outline: none;
@@ -25,10 +33,18 @@ input, button{
 a{
     font-family:ubuntu;
     text-decoration: none;
-    color:var(--wh-clr);
+}
+ul{
+    list-style: none;
+}
+.yellow{
+    color:var(--prm-bg-clr);
 }
 .f{
     display:flex;
+}
+.f_rv{
+    flex-direction: row-reverse;
 }
 .f.fd-c{
     flex-direction: column;
@@ -86,4 +102,95 @@ a{
 }
 .highlithed{
    color:var(--id-clr);
+}
+.key + .key{
+    margin-left:15px;
+}
+.key{
+    border:3px solid var(--key-border);
+    border-radius: 11px;
+    box-shadow: inset 10px 9px 34px var(--key-shdw);
+    background-color: var(--key-back);
+    min-height:60px;
+    overflow:hidden;
+    font-size:20px;
+    text-align: center;;
+    color:#fff;
+    font-family:ubuntu;
+    cursor:pointer;
+}
+.key.highlighted{
+    box-shadow: 0px 0px 15px 8px var(--btn-clr);
+}
+.mid{
+    min-width:101px;
+}
+.midd{
+    min-width:120px;
+}
+.low{
+    min-width:60px;
+}
+.large{
+    min-width:160px;
+}
+.largelarge{
+    min-width:450px;
+}
+.x1{
+    font-size:70px;
+}
+.x2{
+    font-size:5.8rem;
+}
+.xs_20{
+    font-size:20px;
+}
+.tit{
+    color:#fff;
+    line-height:30px;
+}
+.xw_500{
+    width:500px;
+}
+.xw_450{
+    width:450px;
+}
+.p_b_x3rm{
+    padding-bottom:calc(16px * 10);
+}
+.c_ps{
+    background-color: var(--ps-clr);
+}
+.c_pr{
+    background-color: var(--pr-clr);
+}
+.c_lr{
+    background-color: var(--lr-clr);
+}
+.ps{
+    background-color: var(--icon-ps);
+}
+.pr{
+    background-color: var(--icon-pr);
+}
+.lr{
+    background-color: var(--icon-lr);
+}
+.t_clr_ps{
+    color:var(--ps-clr);
+}
+*.up{
+    opacity:0;
+}
+*.down{
+    opacity:0;
+}
+@keyframes fadeInDownToUp {
+    from{transform:translateY(-110px); opacity:0};
+    to{transform:translateY(0); opacity:1};
+}
+@keyframes fadeInUpToDown {
+    from{transform:translateY(110px); opacity:0};
+    to{transform:translateY(0); opacity:1};
 }

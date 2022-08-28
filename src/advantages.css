@@ -1,0 +1,78 @@
+.notes{
+    /* border:1px solid red; */
+    padding:5rem;
+}
+.note{
+    width: 330px;
+    height:310px;
+    border-radius: 10px;
+    position: relative;
+}
+.note:nth-child(1){
+    animation-delay: .2s;;
+}
+.note:nth-child(2){
+    animation-delay: .3s;;
+}
+.note:nth-child(3){
+    animation-delay: .4s;;
+}
+.note .note_back{
+    position: absolute;
+    border-radius: inherit;
+    width:inherit;
+    height:inherit;
+    transform: rotate(25deg);
+    background-color: var(--note-back);
+    z-index: -1;
+    opacity: .2;
+}
+.note .note-content{
+    border-radius: inherit;
+    width:inherit;
+    height:inherit;
+    background-color: #fff;
+    overflow: hidden;
+}
+.note .note-content .note-header{
+    padding:.5rem 1.5rem;
+    height:108px;
+}
+.note-header .note-spiral{
+    /* padding-top:.3rem; */
+}
+.note-spiral .circle{
+    display:block;
+    width:20px;
+    height:20px;
+    border:3px solid #fff;
+    border-radius: 50%;;
+    background-color: rgba(29, 29, 31, .88);
+}
+.note-header .note-header-title{
+    color:#fff;
+    margin-top:1rem;
+}
+.note-header-title .icon{
+    width:54px;
+    height:54px;
+    border-radius: 6px;
+    overflow: hidden;
+    padding:.5rem;
+}
+.note-header-title .header-title{
+    padding-left:.8rem;
+}
+.note-header-title .icon img{
+    object-fit: contain;
+    width:100%;
+}
+.note-description{
+    height:100%;
+    padding:26px 1.5rem;
+}
+.note-description .desc{
+    width:250px;
+    font-size: 20px;
+    margin-bottom:2rem;
+}

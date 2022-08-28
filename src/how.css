@@ -1,0 +1,44 @@
+.how{
+    /* border:1px solid; */
+}
+.badge{
+    /* border:1px solid; */
+}
+
+.f_rv .pic-content img{
+    /* margin-left: */
+    left:8rem;
+}
+.pic-content img {
+    opacity: .1;
+    right:10rem !important;
+    z-index: -1;
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) blur(5px);;
+    width:800px;
+    object-fit: cover;
+}
+.f_rv.badge .about{
+    right:8rem;
+}
+.f_vv.badge .about{
+    left:8rem;
+}
+.about{
+    position: relative;
+}
+.about h1{
+    margin-bottom: 3rem;
+}
+.badge .about img{
+    filter:  blur(1px);
+    position: absolute;
+    bottom:-5rem;
+    right:-8rem;
+    z-index: -1;
+    opacity: .4;;
+}
+.badge .about .x1{
+    margin-bottom:3rem;
+}

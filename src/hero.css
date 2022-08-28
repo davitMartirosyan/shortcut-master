@@ -39,7 +39,6 @@
     border:0;
     background-color: transparent;
     border-radius: 20px;
-    margin-right:20px;
 }
 .big:active{
     box-shadow:0 0 0;
@@ -62,35 +61,46 @@
     background-repeat: no-repeat;
 }
 .key-icon.command{
-    background-image: url("../assets/icons/Icon\ feather-command.svg");
+    background-image: url("../assets/components/icons/Icon\ feather-command.svg");
     background-size: contain;
 }
 .key-icon.option{
-    background-image: url("../assets/icons/apple-keyboard-option.svg");
+    background-image: url("../assets/components/icons/apple-keyboard-option.svg");
     background-size: contain;
 }
 .big .key-word{
     color:var(--wh-clr);
     font-size: 29px;
 }
-.form .email{
-    outline: none;
-    border:0;
-    flex:1;
-    /* border:2px solid var(--btn-clr); */
-    border:0;
-    font-size:15px;
-    padding-left:25px;
-    margin-right:15px;
-    border-radius: 30px;
-}
-.form .send{
-    border-radius: 50%;
-    width:50px;
-    height:50px;
-    padding:0;
-}
 
+.apps{
+}
+.app-list{
+    /* position: relative; */
+}
+.app-list li{
+    position: relative;
+}
+.app-list li .castle{
+    position: absolute;
+    right:-10px;
+    top:-10px;
+    display:block;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px;
+}
+.castle.unlocked{
+    background-color: var(--ps-clr);
+    background-image: url("../assets/icons/Icon\ ionic-ios-unlock.svg");
+}
+.castle.locked{
+    background-color: var(--lock);
+    background-image: url("../assets/icons/Icon\ ionic-ios-lock.svg");
+}
 .tools{
     height:100%;
     width:58px;
@@ -112,26 +122,66 @@
     transform: rotate(90deg);
 }
 .text-tool{
-    background-image: url("../assets/Icon\ open-text.svg");
+    background-image: url("../assets/components/Icon\ open-text.svg");
 }
 .paint-tool{
-    background-image: url("../assets/Icon\ material-brush.svg");
+    background-image: url("../assets/components/Icon\ material-brush.svg");
 }
 .crop-tool{
-    background-image: url("../assets/Icon\ awesome-crop-alt.svg");
+    background-image: url("../assets/components/Icon\ awesome-crop-alt.svg");
 }
 .pos-tool{
-    background-image: url("../assets/Icon\ feather-move.svg");
+    background-image: url("../assets/components/Icon\ feather-move.svg");
 }
 .pen-tool{
-    background-image: url("../assets/Icon\ feather-pen-tool.svg");
+    background-image: url("../assets/components/Icon\ feather-pen-tool.svg");
 }
 .eyedropper-tool{
-    background-image: url("../assets/Icon\ metro-eyedropper.svg");
+    background-image: url("../assets/components/Icon\ metro-eyedropper.svg");
 }
 .eyedropper-tool{
-    background-image: url("../assets/Icon\ metro-eyedropper.svg");
+    background-image: url("../assets/components/Icon\ metro-eyedropper.svg");
 }
 .cut-tool{
-    background-image: url("../assets/Icon\ ionic-ios-cut.svg");
+    background-image: url("../assets/components/Icon\ ionic-ios-cut.svg");
+}
+.keyboard{
+    /* border:1px solid red; */
+    margin-left:90px;
+}
+.describe{
+    /* border:1px solid; */
+    color:#fff;
+}
+.describe h1{
+    font-size:49px;
+    width:500px;
+    margin-bottom: 60px;
+}
+.describe p{
+    max-width:400px;
+    font-size:16px;
+    line-height: 25px;;
+}
+.email-form p{
+    margin-left:10px;
+    color:var(--btn-clr);
+    height:30px;
+}
+.form .email{
+    outline: none;
+    border:0;
+    flex:1;
+    border:0;
+    font-size:15px;
+    padding-left:25px;
+    margin-right:15px;
+    border-radius: 30px;
+    /* margin-top:10px; */
+}
+.form .send{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    padding:0;
 }

@@ -1,6 +1,11 @@
 @import url("config.css");
 @import url("hero.css");
 @import url("try.css");
+@import url("how.css");
+@import url("advantages.css");
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding:0;
     margin:0;
@@ -40,6 +45,7 @@ section{
 }
 .menu .link{
     font-size:16px;
+    color:var(--wh-clr);
 }
 .get-started .btn + .btn{
     margin-left:40px;
