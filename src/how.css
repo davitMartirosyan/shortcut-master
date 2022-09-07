@@ -5,19 +5,23 @@
     /* border:1px solid; */
 }
 
-.f_rv .pic-content img{
-    /* margin-left: */
-    left:8rem;
+.f_rv.badge .pic-content{
+    left:8rem !important;
 }
-.pic-content img {
+.f_vv.badge .pic-content{
+    right:8rem !important;
+}
+.pic-content {
     opacity: .1;
-    right:10rem !important;
     z-index: -1;
     position: relative;
     -webkit-filter: grayscale(100%);
-    filter: grayscale(100%) blur(5px);;
+}
+.pic-content img, .pic-content video{
+    filter: grayscale(100%) blur(2px);
     width:800px;
     object-fit: cover;
+
 }
 .f_rv.badge .about{
     right:8rem;

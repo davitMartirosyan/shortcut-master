@@ -38,9 +38,6 @@
     padding:.5rem 1.5rem;
     height:108px;
 }
-.note-header .note-spiral{
-    /* padding-top:.3rem; */
-}
 .note-spiral .circle{
     display:block;
     width:20px;

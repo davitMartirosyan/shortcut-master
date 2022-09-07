@@ -1,0 +1,54 @@
+.sup{
+    margin-bottom:3rem;
+}
+.support h3{
+    font-weight: 100;
+}
+.app{
+    width:500px;
+}
+.sequence{
+    position: relative;
+}
+.apps{
+    position: relative;
+    margin-top:3rem;
+}
+.apps:before{
+    content: "";
+    display: block;
+    width:50px;
+    height:50px;
+    background-color: var(--prm-clr);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%) rotate(45deg); 
+}
+.app_sec .app{
+    padding:2rem;
+}
+.applet{
+    width:400px;
+    margin-top:2.5rem;
+}
+.app{
+    width:500px;
+    height:500px;
+}
+.applet ul{
+    width:300px;
+}
+.applet ul li{
+    width:100px;
+    margin:1.2rem;
+    position: relative;
+}
+.applet ul li span.title{
+    margin-top:.5rem;
+    font-weight: 500;
+}
+.applet ul li img
+{
+    width:100%;
+}

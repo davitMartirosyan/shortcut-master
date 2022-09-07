@@ -51,5 +51,11 @@ import data from './key.json' assert { type: "json" };
     up.forEach(up => {
         uptodown.observe(up);
     })
-
+    window.addEventListener("load", (e)=>{
+        const videos = e.target.querySelectorAll("video");
+        videos.forEach((video)=>{
+            video.play();
+            video.muted = true;
+        })
+    })
 })();

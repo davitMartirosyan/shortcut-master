@@ -18,7 +18,7 @@
 }
 .visual-left .annotation{
     font-weight: bold;
-    font-size:75px;
+    font-size:65px;
     position: relative;
 }
 .annotation i{
@@ -26,10 +26,12 @@
     right:4rem;
     top:-.8rem;
     font-size:25px;
-
 }
 .button-components{
     height:191px;
+}
+.button-components .big + .big{
+    margin-left:25px;
 }
 .big{
     transition: .2s;
@@ -73,33 +75,8 @@
     font-size: 29px;
 }
 
-.apps{
-}
-.app-list{
-    /* position: relative; */
-}
-.app-list li{
-    position: relative;
-}
-.app-list li .castle{
-    position: absolute;
-    right:-10px;
-    top:-10px;
-    display:block;
-    width:25px;
-    height:25px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 10px;
-}
-.castle.unlocked{
-    background-color: var(--ps-clr);
-    background-image: url("../assets/icons/Icon\ ionic-ios-unlock.svg");
-}
-.castle.locked{
-    background-color: var(--lock);
-    background-image: url("../assets/icons/Icon\ ionic-ios-lock.svg");
+.visual-right{
+    height: 100%;
 }
 .tools{
     height:100%;
@@ -108,7 +85,7 @@
     box-shadow: 0 7px 0 var(--prm-clr-comp-shdw);
     border-radius:18px;
     overflow: hidden;
-    padding:90px 0;
+    padding:50px 0;
 }
 .tool-bar{
     width:100%;

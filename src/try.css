@@ -4,9 +4,8 @@
 .try{
     background-color: var(--prm-bg-clr);
     padding:146px 0!important;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
-
 }
+
 .try-section > *{
     margin-bottom:65px;
 }
@@ -70,4 +69,12 @@
 
 .key-row + .key-row{
     margin-top:15px;
+}
+.top-left-to-right-bottom{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+}
+
+/*************************************************************************************/
+.try-wrap .co-f{
+    border: 1px solid;
 }

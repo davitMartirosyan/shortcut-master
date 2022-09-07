@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="88" viewBox="0 0 90 88">
+  <g id="Group_74" data-name="Group 74" transform="translate(-418 -2791)">
+    <g id="Rectangle_101" data-name="Rectangle 101" transform="translate(418 2791)" fill="none" stroke="#b8b8b8" stroke-width="4">
+      <rect width="90" height="88" stroke="none"/>
+      <rect x="2" y="2" width="86" height="84" fill="none"/>
+    </g>
+    <g id="PyTorch_logo_icon" transform="translate(441.017 1738.652)">
+      <path id="Path_153" data-name="Path 153" d="M39.534,1083.8l-4.089,4.089a17.063,17.063,0,1,1-24.131,24.131,16.972,16.972,0,0,1,0-24.131h0l10.652-10.652,1.514-1.514h0V1067.7L7.427,1083.754a22.793,22.793,0,1,0,32.107.05Z" fill="#b8b8b8"/>
+      <circle id="Ellipse_48" data-name="Ellipse 48" cx="2.978" cy="2.978" r="2.978" transform="translate(28.528 1076.888)" fill="#b8b8b8"/>
+    </g>
+  </g>
+</svg>

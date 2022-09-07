@@ -3,6 +3,8 @@
 @import url("try.css");
 @import url("how.css");
 @import url("advantages.css");
+@import url("support.css");
+@import url("about.css");
 html{
     scroll-behavior: smooth;
 }
@@ -22,7 +24,7 @@ header{
     margin-top:70px;
 }
 section{
-    margin-top:190px;   
+    margin-top:150px;   
 }
 .top-bar{
     position: relative;
