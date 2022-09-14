@@ -27,6 +27,111 @@
     --icon-pr:#811694;
     --icon-lr: #001A2E;
 }
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:ubuntu;
+}
+body{
+    background-color:var(--prm-clr);
+}
+.wrapper{
+    margin:0 auto;
+}
+.wrapper > *{
+    padding:0 140px;
+}
+header{
+    margin-top:70px;
+    position: relative !important;
+}
+section{
+    /* margin-top:150px; */
+    margin: 150px auto !important;
+}
+.top-bar{
+    position: relative;
+}
+.sh_logo{
+    width:50px;
+    height:50px;
+}
+.sh_logo img{
+    width:100%;
+}
+.burger_menu{
+    display: none;
+    padding:.5rem;
+    width:50px;
+    height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: var(--prm-btn-clr);
+    border:0;
+    cursor: pointer;
+}
+.ln{
+    position: absolute;
+    bottom:-7px;
+    left: 20px;
+    display:inline-block;
+    width:10px;
+    height:3px;
+    border-radius:4px;
+    background-color: var(--id-clr);
+}
+.top-menu li + li{
+    margin-left:50px;
+}
+.menu{
+    list-style-type: none;
+}
+.menu .link{
+    font-size:16px;
+    color:var(--wh-clr);
+}
+.get-started .btn + .btn{
+    margin-left:40px;
+}
+.heredoc{
+    width:80%;
+    padding:2rem 5rem;
+    color:#fff;
+}
+.heredoc a{
+    color:#fff;
+}
+.footer-menu{
+    width:500px;
+}
+.newsletter_subscription{
+    margin-top:5rem;
+    width:900px;
+}
+.newsletter_subscription p{
+    width:300px;
+    margin-right: 2.5rem;;
+    line-height:1.3rem;
+}
+.subscribe{
+    width:400px;
+}
+.copyright{
+    display: inline-block;
+    margin-top:2rem;
+}
+.year{
+    background-color: var(--btn-clr);
+    color:#fff;
+    padding:.2rem;
+    border-radius: 4px;;
+}
 input, button{
     outline: none;
 }

@@ -4,6 +4,8 @@ import data from './key.json' assert { type: "json" };
     const down = document.querySelectorAll(".down");
     const up = document.querySelectorAll(".up");
     const trySection = document.querySelector(".try");
+    const year = document.querySelector(".year");
+    const btnBurg = document.querySelector(".singular");
     let options = {
         root: trySection,
         rootMargin: '0px',
@@ -54,8 +56,13 @@ import data from './key.json' assert { type: "json" };
     window.addEventListener("load", (e)=>{
         const videos = e.target.querySelectorAll("video");
         videos.forEach((video)=>{
-            video.play();
             video.muted = true;
+            video.play();
         })
+    })
+    const newtime = new Date();
+    year.textContent = newtime.getFullYear();
+    btnBurg.addEventListener("click", ()=>{
+        document.querySelector(".top-bar").classList.toggle("active");
     })
 })();

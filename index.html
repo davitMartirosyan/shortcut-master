@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Montserrat:wght@100;200;300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shortcut Master</title>
 </head>
 <body>
@@ -17,16 +18,18 @@
         <div class="sh_logo">
             <a href="#"><img src="assets/sh-mstr.svg" alt=""></a>
         </div>
-        <div class="top-bar">
+        <div class="top-bar in_active">
             <ul class="f top-menu menu">
                 <li><a class="link" href="#">Home</a></li>
-                <li><a class="link" href="#">Learn</a></li>
+                <li><a class="link" href="#learn">Learn</a></li>
+                <li><a class="link" href="#supported">Supported</a></li>
                 <li><a class="link" href="#how">About</a></li>
-                <li><a class="link" href="#">Features</a></li>
-                <li><a class="link" href="#">Contact Us</a></li>
+                <li><a class="link" href="#features">Features</a></li>
+                <li><a class="link" href="#contact">Contact Us</a></li>
             </ul>
             <span class="ln"></span>
         </div>
+        <button class="burger_menu singular"><i class="fa-solid fa-bars"></i></button>
     </header>
     <section class="hero">
         <div class="section-container f jc-c">
@@ -79,7 +82,7 @@
             </div>
         </div>
     </section>
-    <section class="try-wrap no-narrow">
+    <section class="try-wrap no-narrow keypad-keyboard" id="learn">
         <div class="try f jc-c top-left-to-right-bottom">
             <div class="try-section f fd-c ai-c">
                 <div class="editor-title">
@@ -97,7 +100,7 @@
 
     <section class="support">
        <div class="software-support f fd-c ai-c">
-        <h1 class="x1 yellow sup">Supported Software</h1>
+        <h1 class="x1 yellow sup" id="supported">Supported Software</h1>
         <h3 class="xs_30 white t_c" style="max-width:800px;">Get suggestions from Shortcut Master while you work in desktop applications.</h3>
         <div class="apps">
                 <span class="lines"></span>
@@ -198,7 +201,6 @@
                     </video>
                 </div>
             </div>
-        <div class="badges f fd-c jc-c ai-c">
             <div class="badge f p_b_x3rm up f_rv">
                 <div class="about f fd-c jc-c">
                     <h1 class="x2 yellow">Learn by Doing</h1>
@@ -215,7 +217,6 @@
                     </video>
                 </div>
             </div>
-        <div class="badges f fd-c jc-c ai-c">
             <div class="badge f p_b_x3rm up f_vv">
                 <div class="about f fd-c jc-c">
                     <h1 class="x2 yellow">Smart Keyboard</h1>
@@ -227,10 +228,9 @@
                     <img src="./assets/components/pack/keyboard.svg" alt="">
                 </div>
             </div>
-        <div class="badges f fd-c jc-c ai-c">
             <div class="badge f p_b_x3rm up f_rv">
                 <div class="about f fd-c jc-c">
-                    <h1 class="x2 yellow">Smart App</h1>
+                    <h1 class="x2 yellow" id="features">Smart App</h1>
                     <p class="tit xs_20 xw_500">
                         Shortcut Master app can work independently as a standalone product, giving you hints on the shortcuts to use. But also in collaboration with the Smart Keyboard.
                         Our app is designed to give you reports on the shortcuts you use, calculate time that you saved using shortcuts and assess your progress is shortcut learning process.
@@ -240,7 +240,6 @@
                     <img src="./assets/components/pack/keyboard.svg" alt="">
                 </div>
             </div>
-
             <div class="badge f p_b_x3rm up fd-c ai-c">
                 <h1 class="x1 yellow">Speed up your work by 300%</h1>
                 <p class="tit xs_20 xw_900" style="padding-top: 2rem;">
@@ -253,22 +252,54 @@
                     Shortcut Master Keyboard is designed to be portable so you could take it with you on a journey and learn shortcuts on the go.
                 </p>
             </div>
+        </div>
         </section>
         <!-- keyboard rendering section -->
 
 
         <section class="try-wrap no-narrow">
             <div class="try bottom-right-to-left-top f jc-c">
-                <div class="f jc-sb co-f">
-                    <div class="disc">
-                        <p>“Shortcut Master was created from a personal need to learn shortcuts without extra effort of creating cheat sheets or going through software documentation looking for shortcuts. It is like a friend who knows the software at 110% and is always there to help you.”</p>
+                <div class="f jc-sb ai-c co-f">
+                    <div class="disc up">
+                        <p>“<span class="master">Shortcut Master</span> was created from a personal need to learn shortcuts without extra effort of creating cheat sheets or going through software documentation looking for shortcuts. It is like a friend who knows the software at 110% and is always there to help you.”</p>
                     </div>
+                    <div class="founder down">
                     <div class="co_pic">
                         <img src="./assets/components/imgs/co-founder.png" alt="">
+                    </div>
+                    <div class="nm">
+                        <p>Dmitri Lobanov</p>
+                        <span class="type">co-founder</span>
+                    </div>
                     </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="here f jc-c">
+                <div class="heredoc f fd-c ai-c">
+                    <ul class="footer-menu f jc-sb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Speed up</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="newsletter_subscription f jc-sb ai-c">
+                        <p>Sign up to our newsletter, to be the first one to know, when we release the Shortcut Master</p>
+                        <div class="subscribe" id="contact">
+                            <form action="#" method="POST" class="form f jc-sb">
+                                <input type="text" placeholder="Email:" class="email" name="email">
+                                <button type="submit" class="btn btn-primary send"><i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <span class="copyright">
+                        Shortcut Master &copy; <span class="year"></span>
+                    </span>
+                </div>
+            </div>      
+        </footer>
     </div>
 
     <script src="js/main.js" type="module"></script>
