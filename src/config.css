@@ -89,6 +89,24 @@ section{
 .top-menu li + li{
     margin-left:50px;
 }
+.top-menu{
+    margin-right: 3rem;;
+}
+.soc_media li + li{
+    margin-left:.8rem;
+    transition: .1s;
+}
+.soc_media li:hover{
+    margin-top:-.2rem;
+}
+.soc_media a img{
+    width:100%;
+}
+.soc_media a{
+    display:block;
+    width:25px;
+    height: 25px;
+}
 .menu{
     list-style-type: none;
 }

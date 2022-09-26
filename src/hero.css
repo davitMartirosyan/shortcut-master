@@ -15,6 +15,7 @@
 }
 .visual-left{
     color:var(--wh-clr);
+    margin-right:1.2rem;
 }
 .visual-left .annotation{
     font-weight: bold;
@@ -91,12 +92,16 @@
     width:100%;
     height:100%;
 }
-.tool-bar .tool{
-    width:100%;
-    height:100%;
+.tool{
+    width:25px;
+    height:25px;
     display:inline-block;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.btn-yellow .tool{
+    width:50px;
+    height: 50px;
 }
 .tool-bar li{
     width:35px;

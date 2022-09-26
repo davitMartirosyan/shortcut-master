@@ -64,6 +64,28 @@ let data = [
     const trySection = document.querySelector(".try");
     const year = document.querySelector(".year");
     const btnBurg = document.querySelector(".singular");
+    const toolsMenu = document.querySelector(".tool-bar");
+    const ylw = document.querySelector(".btn-yellow");
+    let tools = document.querySelectorAll(".tool");
+    // console.log(tool);
+    // tools = Array.from(tools);
+    tools.forEach((tool) => {
+        tool.addEventListener("click", (e)=>{
+            ylw.children[0].classList = e.target.classList;
+            ylw.children[1].textContent = e.target.dataset.role;
+            ylw.style.marginTop = "25px";
+            ylw.style.boxShadow = "0 0 0";
+            setTimeout(()=>{
+                ylw.style.marginTop = "0";
+                if(ylw.classList.contains("btn-yellow"))
+                    ylw.style.boxShadow = "0 25px 0 var(--prm-btn-shdw-clr)";
+                else
+                    ylw.style.boxShadow = "0 25px 0 var(--btn-shdw-clr)";
+
+            }, 200);
+            console.log(e)
+        })
+    });
     let options = {
         root: trySection,
         rootMargin: '0px',
