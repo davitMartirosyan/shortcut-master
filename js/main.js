@@ -83,7 +83,6 @@ let data = [
                     ylw.style.boxShadow = "0 25px 0 var(--btn-shdw-clr)";
 
             }, 200);
-            console.log(e)
         })
     });
     let options = {
