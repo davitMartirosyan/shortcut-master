@@ -16,6 +16,15 @@
    .try-wrap{
        display:none !important;
    }
+   .contributors-section{
+       flex-wrap: wrap;
+       justify-content: center;
+       gap:50px;
+       padding:2.5rem 0;
+    }
+    .contributors{
+     width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1300px){
@@ -152,6 +161,12 @@
 }
 
 @media only screen and (max-width: 780px){
+    .wrapper{
+        overflow: hidden;
+    }
+    section{
+        padding:0 1.2rem !important;
+    }
     .wrapper{
         width:auto;
     }
