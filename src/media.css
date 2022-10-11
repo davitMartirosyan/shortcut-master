@@ -246,4 +246,8 @@
         display:block;
         background-color: var(--prm-btn-clr) !important;
     }
+    .contributors-section .contributor .cont-img{
+        width:150px;
+        height:150px;
+    }
 }
