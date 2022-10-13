@@ -140,6 +140,7 @@ let data = [
     year.textContent = newtime.getFullYear();
     btnBurg.addEventListener("click", () => {
         document.querySelector(".top-bar").classList.toggle("active");
+        btnBurg.parentElement.classList.toggle("active-header");
     })
 })();
 
