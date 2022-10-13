@@ -161,8 +161,37 @@
 }
 
 @media only screen and (max-width: 780px){
-    .wrapper{
-        overflow: hidden;
+    .here{
+        width:100%;
+    }
+    .heredoc{
+        padding:0 1.2rem 1.2rem 1.2rem;
+    }
+    .app_sec .app h1{
+        font-size:2rem !important;
+        text-align: center;
+    }
+    .subscribe{
+        width:100%;
+    }
+    .app{
+        width:100%;
+    }
+    button.big{
+        width: 100%;
+    }
+    .button-components{
+        width:100%;
+    }
+    button.btn-pink{
+        display: none;;
+    }
+    .section-container{
+        padding:0 !important;
+    }
+    .visual-left{
+        margin-right: 0;
+        justify-content: flex-start;
     }
     section{
         padding:0 1.2rem !important;
