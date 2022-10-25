@@ -71,7 +71,8 @@ let data = [
     // tools = Array.from(tools);
     tools.forEach((tool) => {
         tool.addEventListener("click", (e)=>{
-            ylw.children[0].classList = e.target.classList;
+            ylw.children[0].classList = "tool-shortcut";
+            ylw.children[0].textContent = e.target.dataset.shortcut;
             ylw.children[1].textContent = e.target.dataset.role;
             ylw.style.marginTop = "25px";
             ylw.style.boxShadow = "0 0 0";
@@ -90,22 +91,6 @@ let data = [
         rootMargin: '0px',
         treshold: 1.0
     }
-
-    data.forEach(elem => {
-        let keyRow = document.createElement("div");
-        keyRow.classList = "key-row f";
-        for (let i = 0; i < elem.length; i++) {
-            let clas = elem[i].key.width;
-            let symbol = elem[i].key.symbol;
-            let rand = Math.ceil(Math.random() * elem.length);
-            let key = document.createElement("button");
-            key.classList = `key ${clas}`;
-            key.textContent = symbol;
-            key.style.boxShadow = i == rand ? `0px 0px 15px 8px #FF11${rand * 8}` : 0;
-            keyRow.appendChild(key)
-        }
-        keyboard.appendChild(keyRow);
-    });
     const downtoup = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {

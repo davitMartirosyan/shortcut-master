@@ -1,33 +1,25 @@
-.how{
+.badges{
     /* border:1px solid; */
+    /* width: 80%; */
+    margin:0 auto;
 }
 .badge{
-    /* border:1px solid; */
+    gap:5rem;
+    width:100%;
+}
+.badge.special .about{
+    width:100%;
+    text-align: justify;
 }
 
-.f_rv.badge .pic-content{
+/* .f_rv.badge .pic-content{
     left:8rem !important;
 }
 .f_vv.badge .pic-content{
     right:8rem !important;
-}
+} */
 .pic-content {
-    opacity: .1;
     z-index: -1;
-    position: relative;
-    -webkit-filter: grayscale(100%);
-}
-.pic-content img, .pic-content video{
-    filter: grayscale(100%) blur(2px);
-    width:800px;
-    object-fit: cover;
-
-}
-.f_rv.badge .about{
-    right:8rem;
-}
-.f_vv.badge .about{
-    left:8rem;
 }
 .about{
     position: relative;
@@ -35,11 +27,14 @@
 .about h1{
     margin-bottom: 3rem;
 }
+.pic-content .app-pic{
+    width:350px;
+}
 .badge .about img{
     filter:  blur(1px);
     position: absolute;
     bottom:-5rem;
-    right:-8rem;
+    /* right:-8rem; */
     z-index: -1;
     opacity: .4;;
 }

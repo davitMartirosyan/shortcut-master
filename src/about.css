@@ -75,9 +75,10 @@
     padding:5rem;
     overflow: hidden;
 }
-.contributors-section{
-    margin:0 auto;
-    width:80%;
+
+.history-section{
+    width:40%;
+    margin-left:12rem;
 }
 .contributor .cont-img{
     border:3px solid #fff;
@@ -86,6 +87,7 @@
     padding:.5rem;
     border-radius: 50%;
     margin-bottom: .8rem;;
+    position: relative;
 }
 .contributor .cont-img img{
     width:100%;
@@ -97,4 +99,45 @@
 .contributor .cont-tit{
     text-align: center;
     color:#fff;
+}
+.cont-tit p{
+    background-color: #070707;
+    padding:.5rem 1rem; 
+    border-radius: 50px;
+}
+.contributor{
+    margin-bottom: 2.3rem;
+}
+.history-description{
+    color:#fff;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.history-title{
+    margin-bottom: 1.5rem;
+}
+._contributors{
+    width:90%;
+}
+.cont-img:after{
+    display:block;
+    background-color: var(--prm-bg-clr);
+    width:80px;
+    height:20px;
+    padding:.3rem;
+    top:50%;
+    right:-3rem;
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    border-radius:50px;
+}
+.ceo:after{
+    content: "CEO";
+}
+.cto:after{
+    content: "CTO";
+}
+.designer:after{
+    content: "Designer";
 }

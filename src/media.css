@@ -31,9 +31,6 @@
     button.big{
         width:200px;
     }
-    *{
-        /* border:1px solid; */
-    }
     .pic-content{
         width:100%;
     }
@@ -45,18 +42,13 @@
     .badge{
         width:100% !important;
     }
-}
 
-@media only screen and (max-width: 1300px){
     .hero{
         margin: 150px auto;
         padding:0;
     }
     .section-container{
         padding:0 15rem;
-    }
-    .wrapper{
-        /* padding:0 5rem;; */
     }
     .visualisation{
         flex-direction: column;
@@ -88,6 +80,32 @@
 }
 
 @media only screen and (max-width: 1030px){
+    .contributors{
+        width:100%;
+    }
+    ._contributors{
+        padding:2rem;
+        flex-direction:column;
+    }
+    .contributors-section{
+        display:flex;
+        width:100%;
+    }
+    .history-section p.history-description{
+        font-size: 15px;
+    }
+    .history-section .history-title{
+        font-size:2.5rem !important;
+    }
+    .cont-img:after{
+        top:25px;
+        right: -11px;
+    }
+    .history-section{
+        width:100%;
+        margin:0;
+        text-align: center;
+    }
     .app_sec .app{
         height:auto;
         margin-top:2rem;
@@ -161,6 +179,17 @@
 }
 
 @media only screen and (max-width: 780px){
+    .cont-img:after{
+        top:15px;
+        right: -25px;
+        width: 40px;
+        height:10px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        padding:.5rem;
+    }
     section{
         padding:0 1.2rem !important;
         margin: 100px auto !important;
