@@ -16,7 +16,7 @@
   <g id="Group_3" data-name="Group 3" transform="translate(-0.825 -0.326)">
     <rect id="Rectangle_9" data-name="Rectangle 9" width="42" height="42" rx="6" transform="translate(0.825 0.326)" fill="url(#linear-gradient)"/>
     <g transform="matrix(1, 0, 0, 1, 0.82, 0.33)" filter="url(#S)">
-      <text id="S-2" data-name="S" transform="translate(12 30)" fill="#fff" font-size="29" font-family="Ubuntu, Capriola"><tspan x="0" y="0">S</tspan></text>
+      <text id="S-2" data-name="S" transform="translate(12 30)" fill="#fff" font-size="29" font-family="Ubuntu"><tspan x="0" y="0">S</tspan></text>
     </g>
   </g>
 </svg>
