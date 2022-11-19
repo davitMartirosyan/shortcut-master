@@ -30,6 +30,7 @@
 }
 .button-components{
     height:191px;
+    width: 100%;
 }
 .button-components .big + .big{
     margin-left:25px;
@@ -48,7 +49,8 @@
     margin-top:25px;
 }
 .btn-yellow{
-    width:300px;
+    width:230px;
+    margin: auto;
     background-color: var(--prm-btn-clr);
     box-shadow: 0 25px 0 var(--prm-btn-shdw-clr);
 }
